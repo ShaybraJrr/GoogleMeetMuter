@@ -1,0 +1,67 @@
+:root {
+  color-scheme: light dark;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+main {
+  padding: 12px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+h2 {
+  margin: 12px 0 6px;
+  font-size: 0.9rem;
+}
+
+.subtitle {
+  margin: 6px 0 10px;
+  font-size: 0.8rem;
+}
+
+label {
+  font-size: 0.8rem;
+}
+
+select,
+button {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 6px;
+  padding: 8px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+button.secondary {
+  opacity: 0.85;
+}
+
+button.full {
+  margin-top: 10px;
+}
+
+#blockedList {
+  margin: 4px 0;
+  padding-left: 18px;
+  min-height: 1.4em;
+  font-size: 0.82rem;
+}
+
+#status {
+  min-height: 1.2em;
+  font-size: 0.78rem;
+}
