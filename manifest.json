@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Google Meet Participant Audio Blocker",
+  "description": "Select participants in Google Meet and locally block their audio.",
+  "version": "1.0.0",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://meet.google.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Meet Audio Blocker"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://meet.google.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
