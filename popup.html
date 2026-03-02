@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet Audio Blocker</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Meet Audio Blocker</h1>
+      <p class="subtitle">Pick participants whose audio you want to block locally.</p>
+
+      <label for="participantSelect">Participants</label>
+      <select id="participantSelect"></select>
+
+      <div class="buttons">
+        <button id="blockBtn">Block audio</button>
+        <button id="unblockBtn" class="secondary">Unblock selected</button>
+      </div>
+
+      <h2>Currently blocked</h2>
+      <ul id="blockedList"></ul>
+
+      <button id="refreshBtn" class="secondary full">Refresh list</button>
+      <p id="status" role="status"></p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
